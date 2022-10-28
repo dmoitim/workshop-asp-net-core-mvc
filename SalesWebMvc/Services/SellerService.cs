@@ -20,7 +20,6 @@ namespace SalesWebMvc.Services
 
         public void Insert(Seller seller)
         {
-            seller.Department = _context.Department.First(); // Only for test
             _context.Add(seller);
             _context.SaveChanges();
         }
